@@ -1,0 +1,13 @@
+extends layout
+block append head
+
+block content
+  div#chatRoom
+    section#chatrooms
+    div#new_room
+      div.d1 Create a Room
+      input#new_room_name(type="text" placeholder="Create a Room")
+      input#new_room_btn(type="button", value="CREATE ROOM")
+    div#allrooms
+      div#header Or join an existing Room
+      div#rooms_list

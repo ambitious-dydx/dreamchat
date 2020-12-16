@@ -1,0 +1,19 @@
+extends layout
+
+block append head
+  script(type='text/javascript',  src='/javascripts/landing.js')
+
+block content
+  div#Wel
+    header#banner
+      img#logo(src="/images/dream_logo - Copy.png", alt="dream chat logo")
+      h1 Dream Chat
+    section#welcome
+    div#welcome Welcome
+    div
+      div.d Enter a nickname
+      input#nickname(type="text", placeholder="Enter a nickname")
+      div.d Enter your phone number
+      input#phone_number(type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter your phone number")
+    div.start
+      a#login(href="/rooms") LOGIN  
