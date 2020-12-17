@@ -47,8 +47,9 @@ module.exports = app;
 
 var io=require('socket.io')(server);
 
-server.listen(3090,function(){
-  console.log("Express server listening on port " + 3090); 
+
+server.listen(process.env.PORT||3090,function(){
+  console.log("Express server listening on port  process.env.port or " + 3090); 
 });
 
 sockets.initialize(io);
